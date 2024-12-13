@@ -1,0 +1,2 @@
+9667ced (HEAD -> main) 日本語訳を追記
+1a54dd7 hello_world.txt1を追加
