@@ -1,2 +1,25 @@
-9667ced (HEAD -> main) 日本語訳を追記
-1a54dd7 hello_world.txt1を追加
+suzukisayaka@suzukisayakanoMacBook-Air desktop % mkdir git_challange
+suzukisayaka@suzukisayakanoMacBook-Air desktop % git init
+Initialized empty Git repository in /Users/suzukisayaka/Desktop/.git/
+suzukisayaka@suzukisayakanoMacBook-Air desktop % cd git_challange
+suzukisayaka@suzukisayakanoMacBook-Air git_challange % echo " hello,world! " >> hello_world.txt
+suzukisayaka@suzukisayakanoMacBook-Air git_challange % git add hello_world.txt
+suzukisayaka@suzukisayakanoMacBook-Air git_challange % git commit -m "hello_world.txtを追加"
+[main (root-commit) 37b3acd] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challange/hello_world.txt
+suzukisayaka@suzukisayakanoMacBook-Air git_challange % git diff                                
+diff --git a/git_challange/hello_world.txt b/git_challange/hello_world.txt
+index 332c785..1761c86 100644
+--- a/git_challange/hello_world.txt
++++ b/git_challange/hello_world.txt
+@@ -1 +1,2 @@
+  hello,world! 
++こんにちは、世界！
+suzukisayaka@suzukisayakanoMacBook-Air git_challange % git add .
+suzukisayaka@suzukisayakanoMacBook-Air git_challange % git commit -m "日本語訳を追記"
+[main 070086c] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+suzukisayaka@suzukisayakanoMacBook-Air git_challange % git log --oneline
+070086c (HEAD -> main) 日本語訳を追記
+37b3acd hello_world.txtを追加
